@@ -4,7 +4,6 @@ import {
   Grid,
   TextField,
   Button,
-  IconButton,
   Container,
 } from "@mui/material";
 import EmailIcon from "@mui/icons-material/Email";
@@ -17,7 +16,6 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 
 const Contact = () => {
   return (
-    <Container>
     <Box
       id="contact"
       sx={{
@@ -29,11 +27,12 @@ const Contact = () => {
         padding: "50px 20px",
         minHeight: "60vh",
         backgroundColor : "#fff",
-        borderRadius : "40px",
-        marginBottom :"50px"
+        // borderRadius : "40px",
+        // marginBottom :"50px"
       }}
     >
-    
+        <Container>
+
 
         {/* Section Title */}
       <Typography variant="h3" sx={{ fontWeight: "bold", marginBottom: 1 }}>
@@ -90,15 +89,9 @@ const Contact = () => {
             </Box>
 
             <Box sx={{ display: "flex", alignItems: "center", justifyContent :"center", gap: 0, marginTop: 4 }}>
-              <Button sx={{ color: "#9b6dc6"}}>
-              <FacebookIcon sx={{ fontSize: 30, marginRight: 2, color: "#9b6dc6", border :"1px solid #9b6dc6" , padding : 0.5, borderRadius : "50%"  }}/>
-              </Button>
-              <IconButton sx={{ color: "#9b6dc6" }}>
-              <InstagramIcon sx={{ fontSize: 30, marginRight: 2, color: "#9b6dc6", border :"1px solid #9b6dc6" , padding : 0.5, borderRadius : "50%"  }}/>
-              </IconButton>
-              <IconButton sx={{ color: "#9b6dc6" }}>
-              <GitHubIcon sx={{ fontSize: 30, marginRight: 2, color: "#9b6dc6", border :"1px solid #9b6dc6" , padding : 0.5, borderRadius : "50%"  }}/>
-              </IconButton>
+              <FacebookIcon sx={{ fontSize: 30, marginRight: 2, color: "#9b6dc6", border :"1px solid #9b6dc6" , padding : 0.5, borderRadius : "50%", cursor : "pointer"  }}/>
+              <InstagramIcon sx={{ fontSize: 30, marginRight: 2, color: "#9b6dc6", border :"1px solid #9b6dc6" , padding : 0.5, borderRadius : "50%", cursor : "pointer"   }}/>
+              <GitHubIcon sx={{ fontSize: 30, marginRight: 2, color: "#9b6dc6", border :"1px solid #9b6dc6" , padding : 0.5, borderRadius : "50%", cursor : "pointer"   }}/>
             </Box>
           </Box>
         </Grid>
@@ -113,9 +106,6 @@ const Contact = () => {
                 //   boxShadow: "0 4px 10px rgba(0,0,0,0.2)",
                 }}
           >
-            {/* <Typography variant="h6" sx={{ fontWeight: "medium", marginBottom: 3, color:"#9b6dc6" }}>
-              Contact Form
-            </Typography> */}
 
             <Grid container spacing={2}>
               <Grid item xs={12} md={6}>
@@ -124,25 +114,25 @@ const Contact = () => {
                   label="Full Name"
                   variant="outlined"
                   sx={{
-                    input: { color: "white" }, // Style for the input text
+                    input: { color: "white" },
                     "& .MuiInputLabel-root": {
-                    color: "gray", // Default label color
+                    color: "gray",
                     },
                     "& .MuiInputLabel-root:hover": {
-                    color: "#9b6dc6", // Hover color for the label
+                    color: "#9b6dc6",
                     },
                     "& .MuiInputLabel-root.Mui-focused": {
-                    color: "#9b6dc6", // Focused label color
+                    color: "#9b6dc6",
                     },
                     "& .MuiOutlinedInput-root": {
                     "& fieldset": {
-                        borderColor: "gray", // Default border color
+                        borderColor: "gray",
                     },
                     "&:hover fieldset": {
-                        borderColor: "#9b6dc6", // Border color on hover
+                        borderColor: "#9b6dc6",
                     },
                     "&.Mui-focused fieldset": {
-                        borderColor: "#9b6dc6", // Border color on focus
+                        borderColor: "#9b6dc6",
                     },
                     },
                 }}
@@ -154,25 +144,25 @@ const Contact = () => {
                   label="Email Address"
                   variant="outlined"
                   sx={{
-                    input: { color: "white" }, // Style for the input text
+                    input: { color: "white" },
                     "& .MuiInputLabel-root": {
-                    color: "gray", // Default label color
+                    color: "gray",
                     },
                     "& .MuiInputLabel-root:hover": {
-                    color: "#9b6dc6", // Hover color for the label
+                    color: "#9b6dc6",
                     },
                     "& .MuiInputLabel-root.Mui-focused": {
-                    color: "#9b6dc6", // Focused label color
+                    color: "#9b6dc6",
                     },
                     "& .MuiOutlinedInput-root": {
                     "& fieldset": {
-                        borderColor: "gray", // Default border color
+                        borderColor: "gray",
                     },
                     "&:hover fieldset": {
-                        borderColor: "#9b6dc6", // Border color on hover
+                        borderColor: "#9b6dc6",
                     },
                     "&.Mui-focused fieldset": {
-                        borderColor: "#9b6dc6", // Border color on focus
+                        borderColor: "#9b6dc6",
                     },
                     },
                 }}
@@ -232,8 +222,9 @@ const Contact = () => {
           </Box>
         </Grid>
       </Grid>
+          </Container>
+
     </Box>
-    </Container>
 
   );
 };

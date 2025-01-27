@@ -110,7 +110,6 @@ const Skills = () => {
         borderRadius : "40px"
       }}
     >
-      {/* Section Title */}
       <Typography variant="h3" sx={{ fontWeight: "bold", marginBottom: 1 }}>
         Skills
       </Typography>
@@ -118,7 +117,6 @@ const Skills = () => {
         My technical expertise
       </Typography>
 
-      {/* Tabs */}
       <Tabs
         value={activeTab}
         onChange={handleTabChange}
@@ -132,7 +130,7 @@ const Skills = () => {
             fontWeight: "bold",
             color: "gray", 
             },
-            "& .Mui-selected": {
+            " .Mui-selected": {
             color: "#9b6dc6",
             },
             "& .MuiTabs-indicator": {

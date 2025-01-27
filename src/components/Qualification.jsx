@@ -91,7 +91,7 @@ const Qualifications = () => {
             fontWeight: "bold",
             color: "gray", 
             },
-            "& .Mui-selected": {
+            " .Mui-selected": {
             color: "#9b6dc6",
             },
             "& .MuiTabs-indicator": {
