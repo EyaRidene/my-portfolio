@@ -1,8 +1,8 @@
 import Banner from "./components/Banner";
 import Navbar from "./components/Navbar";
-import Projects from "./components/projects";
-import Skills from "./components/skills";
-import Qualifications from "./components/qualification";
+import Projects from "./components/Projects";
+import Skills from "./components/Skills";
+import Qualifications from "./components/Qualification";
 import './App.css'
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
